@@ -10,6 +10,9 @@ import {
 } from 'react-router-dom'
 import App from './components/app'
 import AdditionalInfo from './components/additionalInfo'
+import { Loader } from "@googlemaps/js-api-loader"
+
+
 
 ReactDOM.render(
     // <Provider store={store}>
