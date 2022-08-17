@@ -1,0 +1,11 @@
+// #mainBit {
+//     border: 2px solid red;
+// }
+
+#NavBar {
+    border: 2px solid red;
+}
+
+#NavBar > * {
+    margin: 5px
+}
