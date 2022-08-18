@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+const axios = require('axios')
 
 const InputLocations = (props) => {
 
@@ -8,13 +9,27 @@ const InputLocations = (props) => {
     const handleClick = (e) => {
         e.preventDefault()
 
-        const tripInfo = {
-            start: startingLocation,
-            destination: destination
-        }
+        // const tripInfo = {
+        //     start: startingLocation,
+        //     destination: destination
+        // }
 
-        console.log('tripInfo', tripInfo)
+        // console.log('tripInfo', tripInfo)
+
+        const config = {
+            method: 'get',
+            url: 'https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=AIzaSyA_yhEXoK1E3XGOQ0q6qMJdpV-x4pqZka4',
+            headers: { }
+        }
         //do the fetch
+
+        axios(config)
+        .then(function(response) {
+            console.log(JSON.stringify(response.data))
+        })
+        .catch(function(error) {
+            console.log(error)
+        })
     }
 
     return (

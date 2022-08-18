@@ -12,6 +12,8 @@ function SimpleMap(){
     zoom: 11
   };
 
+
+
   return (
     // Important! Always set the container height explicitly
     <div style={{ height: '50vh', width: '50vh' }}>
@@ -19,6 +21,7 @@ function SimpleMap(){
         bootstrapURLKeys={{ key: "AIzaSyA_yhEXoK1E3XGOQ0q6qMJdpV-x4pqZka4" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
+        
       >
       </GoogleMapReact>
     </div>
@@ -26,3 +29,7 @@ function SimpleMap(){
 }
 
 export default SimpleMap
+
+// watch this video, should have all the info about getting autocomplete and directions up and running 
+
+// https://www.youtube.com/watch?v=iP3DnhCUIsE

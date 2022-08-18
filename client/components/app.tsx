@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import InputLocations from "./input";
-import SimpleMap from "./test";
+import SimpleMap from "./map";
 import Legend from "./legend";
 
 
