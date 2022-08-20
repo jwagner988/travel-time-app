@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ReactElement, useState } from "react";
 const axios = require('axios')
 
 const InputLocations = (props) => {
@@ -28,7 +28,7 @@ const InputLocations = (props) => {
             console.log(JSON.stringify(response.data))
         })
         .catch(function(error) {
-            console.log(error)
+            console.log('errr', error)
         })
     }
 

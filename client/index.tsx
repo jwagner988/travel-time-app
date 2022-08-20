@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import store from './store'
+import store from './store'
 import { Provider } from 'react-redux'
 import {
     BrowserRouter,
@@ -17,7 +17,7 @@ import './styles.scss'
 
 
 ReactDOM.render(
-    // <Provider store={store}>
+    <Provider store={store}>
 
         <BrowserRouter>
 
@@ -27,7 +27,7 @@ ReactDOM.render(
                 {/* <Route path="trips" element={}></Route>
                 <Route path="data" element={}></Route> */}
             </Routes>
-        </BrowserRouter>,
-    // </Provider>,
+        </BrowserRouter>
+     </Provider>,
     document.getElementById('root')
 )

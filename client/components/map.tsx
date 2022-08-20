@@ -24,6 +24,9 @@ function SimpleMap(){
         
       >
       </GoogleMapReact>
+
+
+      
     </div>
   );
 }
