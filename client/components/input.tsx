@@ -1,3 +1,4 @@
+import { response } from "express";
 import React, { ReactElement, useState } from "react";
 const axios = require('axios')
 
@@ -9,26 +10,25 @@ const InputLocations = (props) => {
     const handleClick = (e) => {
         e.preventDefault()
 
-        // const tripInfo = {
-        //     start: startingLocation,
-        //     destination: destination
-        // }
-
-        // console.log('tripInfo', tripInfo)
-
-        const config = {
-            method: 'get',
-            url: 'https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=AIzaSyA_yhEXoK1E3XGOQ0q6qMJdpV-x4pqZka4',
-            headers: { }
+        const tripInfo = {
+            start: startingLocation,
+            destination: destination,
+            someOtherData: 'I am Data :)'
         }
-        //do the fetch
-
-        axios(config)
-        .then(function(response) {
-            console.log(JSON.stringify(response.data))
+        console.log('about to fetch', tripInfo)
+        fetch('/main/trip', {
+            method:'POST',
+            headers: {
+                "Content-Type": 'application/json',
+            },
+            body: JSON.stringify(tripInfo)
         })
-        .catch(function(error) {
-            console.log('errr', error)
+        .then(response => response.json())
+        .then(data => {
+            console.log('data from server', data)
+        })
+        .catch((err) => {
+            console.log('err', err)
         })
     }
 
