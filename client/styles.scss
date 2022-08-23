@@ -1,24 +1,30 @@
-// #mainBit {
-//     border: 2px solid red;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
 
-// #NavBar {
-//     background-color: yellowgreen;
-//     border: 2px solid black;
-//     padding: 16px;
-// }
+#NavBar {
+    background-color: yellowgreen;
+    border: 2px solid black;
+    padding: 16px;
+}
 
-// #NavBar > * {
-//     margin: 5px;
-//     color: black;
-//     text-decoration: none;
-//     background-color: rgb(209, 228, 235);
-//     padding: 1px;
-//     border: 1.5px dotted black;
+#NavBar > * {
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(209, 228, 235);
+    padding: 1px;
+    border: 1.5px dotted black;
     
     
-// }
+}
 
-// #NavBar > *:visited {
-//     color: black
-// }
+#NavBar > *:visited {
+    color: black
+}
+
+#tripData {
+    display: flex;
+    font-size: large;
+}

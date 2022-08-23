@@ -27,9 +27,7 @@ const [europeTrain, setEuropeTrain] = useState(0)
     }
 
     return (
-        <>
-        <p>here be the info</p>
-
+        <div id='tripData'>
         <div id='northAmTrips'>
             <p>Total North American trips: {northAmericaTrips}</p>
             <p>Percentage of North American trips where trains are the fastest mode of transportation: {formatAsPercent(northAmPercent)}</p>
@@ -38,8 +36,7 @@ const [europeTrain, setEuropeTrain] = useState(0)
             <p>Total European trips: {europeTrips}</p>
             <p>Percentage of European trips where trains are the fastest mode of transportation: {formatAsPercent(europePercent)}</p>
         </div>
-
-        </>
+        </div>
     )
 }
 
