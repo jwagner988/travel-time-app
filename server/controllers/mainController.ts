@@ -15,8 +15,8 @@ mainController.getData = (req,res,next) => {
 
     res.locals.europeTotal = 100
     res.locals.europeTrain = 50
-    res.locals.northAmericaTotal = 150
-    res.locals.northAmericaTrain = 8
+    res.locals.northAmericaTotal = 1554
+    res.locals.northAmericaTrain = 123
     next()
 }
 

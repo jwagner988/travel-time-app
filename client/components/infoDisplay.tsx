@@ -19,10 +19,26 @@ const [europeTrain, setEuropeTrain] = useState(0)
         })
     }, [])
 
+    const northAmPercent = northAmericaTrain / northAmericaTrips * 100
+    const europePercent = europeTrain / europeTrips * 100
+
+    function formatAsPercent(num){
+        return `${parseFloat(num).toFixed(2)}%`
+    }
 
     return (
         <>
         <p>here be the info</p>
+
+        <div id='northAmTrips'>
+            <p>Total North American trips: {northAmericaTrips}</p>
+            <p>Percentage of North American trips where trains are the fastest mode of transportation: {formatAsPercent(northAmPercent)}</p>
+        </div>
+        <div id='europeTrips'>
+            <p>Total European trips: {europeTrips}</p>
+            <p>Percentage of European trips where trains are the fastest mode of transportation: {formatAsPercent(europePercent)}</p>
+        </div>
+
         </>
     )
 }
