@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import InputLocations from "./input";
 import SimpleMap from "./map";
 import Legend from "./legend";
+import InfoDisplay from "./infoDisplay";
 
 
 const App = (props) => {
@@ -12,6 +13,7 @@ const App = (props) => {
             <Legend/>
             <InputLocations/>
             <SimpleMap/>
+            <InfoDisplay/>
          </div>
         </>
     )
