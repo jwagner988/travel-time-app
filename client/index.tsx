@@ -9,9 +9,12 @@ import {
     Outlet
 } from 'react-router-dom'
 import App from './components/app'
+import AboutPage from './components/aboutPage'
 import AdditionalInfo from './components/additionalInfo'
+import AdditionalData from './components/additionalData'
 import { Loader } from "@googlemaps/js-api-loader"
 import './styles.scss'
+import Legend from './components/legend'
 
 
 
@@ -20,12 +23,12 @@ ReactDOM.render(
     <Provider store={store}>
 
         <BrowserRouter>
-
+            <Legend/>
             <Routes>
                 <Route path='/' element={<App />}></Route>
                 <Route path='info' element={<AdditionalInfo />}></Route>
-                {/* <Route path="trips" element={}></Route>
-                <Route path="data" element={}></Route> */}
+                <Route path='about' element={<AboutPage />}></Route>
+                <Route path="data" element={<AdditionalData />}></Route>
             </Routes>
         </BrowserRouter>
      </Provider>,

@@ -17,13 +17,13 @@ function SimpleMap(){
   return (
     // Important! Always set the container height explicitly
     <div style={{ height: '50vh', width: '50vh' }}>
-      <GoogleMapReact
+      {/* <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyA_yhEXoK1E3XGOQ0q6qMJdpV-x4pqZka4" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         
       >
-      </GoogleMapReact>
+      </GoogleMapReact> */}
 
 
       

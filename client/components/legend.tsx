@@ -1,17 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Legend = (props) => {
 
 
+const location = useLocation()
+console.log(location)
 
     return (
         <>
             <div id='NavBar'>
                 <Link to="trips">Add a Trip</Link>
                 <Link to="data">View Data</Link>
+                <Link to="about">About</Link>
                 <Link to="info">Learn More</Link>
-                <Link to="/">About</Link>
+                <Link to='/'>Home</Link>
 
             </div>
         </>

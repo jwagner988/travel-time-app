@@ -10,7 +10,6 @@ const App = (props) => {
     return (
         <>
         <div id='mainBit'>
-            <Legend/>
             <InputLocations/>
             <SimpleMap/>
             <InfoDisplay/>
