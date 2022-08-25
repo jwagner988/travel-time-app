@@ -36,7 +36,7 @@ const InputLocations = (props) => {
         <>
             <div id='mainInput'>
                 <h3>Add a new Trip!</h3>
-                <p>Starting location</p>
+                <p>Starting location!!!</p>
                 <input onChange={(e) => setStartingLocation(e.target.value)}></input>
                 <p>Destination</p>
                 <input onChange={(e) => setDestination(e.target.value)}></input>
