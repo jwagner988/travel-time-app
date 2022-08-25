@@ -10,11 +10,10 @@ console.log(location)
     return (
         <>
             <div id='NavBar'>
-                <Link to="trips">Add a Trip</Link>
-                <Link to="data">View Data</Link>
-                <Link to="about">About</Link>
-                <Link to="info">Learn More</Link>
                 <Link to='/'>Home</Link>
+                <Link to="about">About</Link>
+                <Link to="data">View Data</Link>
+                <Link to="info">Learn More</Link>
 
             </div>
         </>

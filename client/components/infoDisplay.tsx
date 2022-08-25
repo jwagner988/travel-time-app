@@ -11,7 +11,6 @@ const [europeTrain, setEuropeTrain] = useState(0)
         fetch('main/trip')
         .then(resp => resp.json())
         .then(data => {
-            console.log(data, 'data!')
             setNorthAmericaTrips(data.northAmericaTotal)
             setNorthAmericaTrain(data.northAmericaTrain)
             setEuropeTrain(data.europeTrain)
